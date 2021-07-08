@@ -510,6 +510,7 @@
   }
   .adress-in-foot {
     font-style: normal;
+    width: 232px;
   }
   .adress-in-foot {
     color: var(--main-title-text-color);
@@ -850,6 +851,7 @@ position: relative;
   align-items: center;
   cursor: pointer;
   margin-bottom: 30px;
+  color: var(--text-all);
 }
 
 .checkbox-text{
@@ -871,8 +873,10 @@ position: relative;
   clip: rect(0 0 0 0);
 }
 
-.checkbox:checked + .checkbox-item{
+.checkbox:checked ~ .checkbox-item{
   border-color: transparent;
+  justify-content: center;
+  align-items: center;
   background-color: var(--buttons-active-color);
   background-image: url(/images/icons/like.svg);
   background-size: contain;
